@@ -227,3 +227,4 @@ echo "$ oc login -u ${USERNAME} -p ${PASSWORD} https://console.$DOMAIN:$API_PORT
 echo "******"
 
 oc login -u ${USERNAME} -p ${PASSWORD} https://console.$DOMAIN:$API_PORT/
+echo "server=/default.svc/172.30.0.1" >> /etc/dnsmasq.d/origin-upstream-dns.conf
